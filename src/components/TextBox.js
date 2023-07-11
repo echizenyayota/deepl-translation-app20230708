@@ -1,4 +1,4 @@
-import SelectDropDown from "./SelecDropDown";
+import SelectDropDown from "./SelectDropDown";
 
 const TextBox = ({ style }) => {
   return (
