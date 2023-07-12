@@ -6,6 +6,7 @@ import { useState } from "react";
 
 
 const App = () => {
+  const [showModal, setShowModal] = useState(null);
   const [inputLanguage, setInputLanguage] = useState("English");
   const [outputLanguage, setOutputLanguage] = useState("Japanese");
 
@@ -14,11 +15,13 @@ const App = () => {
     setOutputLanguage(inputLanguage);
   }
 
+  console.log("showModal", showModal);
   return (
     <div className="app">
       <TextBox
         selectedLanguage={inputLanguage}
-        style='input' 
+        style='input'
+        setShowModal={setShowModal}
       />
       <div className="arrow-container" onClick={handleClick}>
         <Arrows />
@@ -26,6 +29,7 @@ const App = () => {
       <TextBox 
         selectedLanguage={outputLanguage}
         style='output'
+        setShowModal={setShowModal}
       />
     </div>
   );
