@@ -16,7 +16,7 @@ const App = () => {
   }
 
   console.log("showModal", showModal);
-  
+
   return (
     <div className="app">
       {!showModal && <>
@@ -35,7 +35,7 @@ const App = () => {
         />
       </>}
 
-      {showModal && <Modal />}
+      {showModal && <Modal setShowModal={setShowModal}/>}
     </div>
   );
 }
