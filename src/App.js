@@ -35,7 +35,12 @@ const App = () => {
         />
       </>}
 
-      {showModal && <Modal setShowModal={setShowModal}/>}
+      {showModal && 
+        <Modal 
+          setShowModal={setShowModal}
+          chosenLanguage={showModal === "input" ? inputLanguage : outputLanguage}
+          setChosenLanguage={showModal === "input" ? setInputLanguage : setOutputLanguage}
+      />}
     </div>
   );
 }

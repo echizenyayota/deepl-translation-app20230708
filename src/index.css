@@ -77,3 +77,30 @@ input {
   height: 26px;
   fill: #5a5a5d;
 }
+
+.option-list {
+  width: 100%;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;;
+}
+
+.search-bar select {
+  background-size: 24px 24px;
+  padding-left: 16px;
+  padding-right: 40px;
+  width: 90% !important;
+  outline: none;
+  height: 40px;
+}
+
+.search-bar .close-button svg {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  fill: #5a5a5d;
+}
