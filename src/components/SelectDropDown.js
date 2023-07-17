@@ -1,7 +1,12 @@
+import { getNameByCode } from "../utils/langs";
+
 const SelectDropDown = ({ style, setShowModal, selectedLanguage }) => {
+
+  const langName = getNameByCode(selectedLanguage);
+
   return (
     <div className="select-drop-down" onClick={() => setShowModal(style)}>
-      <input value={selectedLanguage} readOnly/>
+      <input value={langName} readOnly />
       <div className="down-arrow">
         <svg
           focusable="false"
