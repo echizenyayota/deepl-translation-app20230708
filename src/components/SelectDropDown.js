@@ -1,7 +1,7 @@
 const SelectDropDown = ({ style, setShowModal, selectedLanguage }) => {
   return (
     <div className="select-drop-down" onClick={() => setShowModal(style)}>
-      <input value={selectedLanguage} />
+      <input value={selectedLanguage} readOnly/>
       <div className="down-arrow">
         <svg
           focusable="false"
