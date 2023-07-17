@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-
 const Modal = ({ setShowModal, chosenLanguage, setChosenLanguage }) => {
 
   const handleSelectedChange = (e) => {
