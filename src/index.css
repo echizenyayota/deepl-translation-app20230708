@@ -104,3 +104,8 @@ input {
   padding: 6px;
   fill: #5a5a5d;
 }
+.button-container {
+  color:#bdc1c6;
+  padding: 18px;
+  height: 20px;
+}
