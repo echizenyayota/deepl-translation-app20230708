@@ -24,8 +24,9 @@ const App = () => {
         text: textToTranslate
       },
       headers: {
-        'X-RapidAPI-Key': process.env.RAPID_API_KEY,
-        'X-RapidAPI-Host': process.env.RAPID_API_HOST
+        // https://create-react-app.dev/docs/adding-custom-environment-variables/
+        'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
+        'X-RapidAPI-Host': process.env.REACT_APP_RAPID_API_HOST
       }
     };
 
@@ -42,6 +43,8 @@ const App = () => {
     setInputLanguage(outputLanguage);
     setOutputLanguage(inputLanguage);
   }
+
+  // console.log(process.env.REACT_APP_RAPID_API_KEY);
 
   return (
     <div className="app">
