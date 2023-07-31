@@ -31,7 +31,7 @@ const App = () => {
     try {
       const response = await axios.request(options);
       console.log(response.data);
-      setTranslatedText(response.data);
+      setTranslatedText(response.data.data.texts[0].text);
     } catch(err) {
 
     }

@@ -9,6 +9,12 @@ const TextBox = ({
   translatedText,
   setTranslatedText
 }) => {
+
+  const handleClick = () => {
+    setTextToTranslate("");
+    setTranslatedText("");
+  }
+
   return (
     <div>
       <SelectDropDown
@@ -16,6 +22,9 @@ const TextBox = ({
         setShowModal={setShowModal}
         selectedLanguage={selectedLanguage}
       />
+      { style === "input" && (
+        <div className="delete" onClick={handleClick}>X</div>
+      )}
       <textarea
         placeholder={style === "input" ? "Enter text" : "Translation"}
         disabled={style === "output"}
